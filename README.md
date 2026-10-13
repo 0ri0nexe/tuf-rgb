@@ -8,6 +8,8 @@ Should work on any TUF laptop where `/sys/class/leds/asus::kbd_backlight/kbd_rgb
 The reverse engineering of the lighting was achieved using [REA](https://github.com/morluto/rea) to test its abilities. Spoiler it's very powerful and proprietary binaries are basically done. You can find the full process of reversing in `docs/REVERSING.md`. The main thing to remember is that Armoury Crate was reversed to understand how it manages the lighting. 
 Knowledge gained with this project will likely contribute to [asusctl](https://github.com/OpenGamingCollective/asusctl), when you're reading this you can probably use it as well.
 
+Note : a lot of software similar to this one already exist, but I guess it was time to make my own and I think it has more feature than other implementations.
+
 > [!WARNING]  
 > This software is touching to some critical parts of the laptop. Issue that could harm hardware or firmware are unlikely but not strictly impossible and this software have no claim to be perfectly safe. Therefor it will not take any resposability for any broken device.
 
