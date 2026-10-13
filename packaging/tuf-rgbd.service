@@ -1,0 +1,11 @@
+[Unit]
+Description=ASUS TUF keyboard lighting daemon
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/tuf-rgbd
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

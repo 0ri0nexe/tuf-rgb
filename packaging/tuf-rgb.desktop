@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TUF RGB
+Comment=Keyboard lighting for ASUS TUF laptops
+Exec=tuf-rgb-gui
+Icon=input-keyboard
+Categories=Settings;HardwareSettings;

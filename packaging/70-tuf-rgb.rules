@@ -1,0 +1,4 @@
+# Give the "tufrgb" group write access to the asus-wmi TUF keyboard lighting interface,
+# so tuf-rgbd can run as a normal user.
+ACTION=="add|change", SUBSYSTEM=="leds", KERNEL=="asus::kbd_backlight", \
+  RUN+="/bin/sh -c 'cd /sys%p && chgrp tufrgb brightness kbd_rgb_mode kbd_rgb_state 2>/dev/null; chmod g+w brightness kbd_rgb_mode kbd_rgb_state 2>/dev/null'"
